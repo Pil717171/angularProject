@@ -6,8 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./input.component.sass']
 })
 export class InputComponent implements OnInit {
-
+  
   constructor() { }
+
+  onClickButton(e) {
+    e.preventDefault()
+    console.log(1)
+  }
+
+  onInput() : void {
+    let input = <HTMLInputElement>document.querySelector('.form-control')
+    console.log(input.value)
+  }
+
 
   ngOnInit() {
   }

@@ -3,9 +3,9 @@
     <form>
       <div class="form-group">
         <label for="exampleInputEmail1">Введите в поле ссылку и нажмите на кнопку "Generate" для того, чтобы ее укоротить. Короткая ссылка будет находиться в нижнем блоке.</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter link">
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter link" (input) = onInput($e)>
       </div>
-      <button type="submit" class="btn btn-primary">Generate</button>
+      <button type="submit" class="btn btn-primary" (click)="onClickButton($e)">Generate</button>
     </form>
   </div>
 </section>
