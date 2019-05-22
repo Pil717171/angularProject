@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LinkblockComponent } from './linkblock.component';
+import { HeaderBotComponent } from './header-bot.component';
 
-describe('LinkblockComponent', () => {
-  let component: LinkblockComponent;
-  let fixture: ComponentFixture<LinkblockComponent>;
+describe('HeaderBotComponent', () => {
+  let component: HeaderBotComponent;
+  let fixture: ComponentFixture<HeaderBotComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LinkblockComponent ]
+      declarations: [ HeaderBotComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LinkblockComponent);
+    fixture = TestBed.createComponent(HeaderBotComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
